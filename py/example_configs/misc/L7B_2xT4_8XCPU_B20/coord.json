@@ -1,0 +1,33 @@
+{
+  "config_name": "L7B_2xT4_8xCPU_B20",
+  "model_name": "llama2-7b-chat",
+  "listen_address": "0.0.0.0",
+  "listen_port": "3020",
+  "n_layers": 32,
+  "n_slices": 2,
+  "tiers": [
+    {
+      "kernel": "simple_piped",
+      "platform": "cuda",
+      "context": "paged",
+      "ranks": 1,
+      "concurrency_size_pre": 20,
+      "concurrency_size_att": 4,
+      "concurrency_size_post": 20,
+      "concurrency_size_cls": 20,
+      "max_context_count": 18
+    },
+    {
+      "kernel": "simple_piped",
+      "platform": "amd64",
+      "context": "paged",
+      "ranks": 4,
+      "concurrency_size_pre": 0,
+      "concurrency_size_att": 4,
+      "concurrency_size_post": 0,
+      "concurrency_size_cls": 0,
+      "max_context_count": 25
+    }
+  ],
+  "separate_cls_tiers": []
+}

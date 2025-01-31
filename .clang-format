@@ -1,0 +1,26 @@
+---
+Language: Cpp
+BasedOnStyle: Mozilla
+ColumnLimit: 120
+SpacesInParentheses: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
+SpaceBeforeCpp11BracedList: true
+BreakBeforeBinaryOperators: All
+AllowShortFunctionsOnASingleLine: All
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+RequiresClausePosition: OwnLine
+IndentRequiresClause: false
+RequiresExpressionIndentation: OuterScope
+AllowShortCompoundRequirementOnASingleLine: true
+---
+Language: Proto
+BasedOnStyle: Mozilla
+ColumnLimit: 120
+SpacesInParentheses: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
+SpaceBeforeCpp11BracedList: true
+BreakBeforeBinaryOperators: All
+AllowShortFunctionsOnASingleLine: All

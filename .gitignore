@@ -1,0 +1,13 @@
+/.vscode
+/build
+.DS_Store
+.idea
+cmake-build-debug
+*.numbers
+.ipynb_checkpoints/
+.jupyter_ystore.db
+__pycache__/
+/.venv
+*.so
+py/simulation/pipe_sim.cpp
+py/simulation/build/
